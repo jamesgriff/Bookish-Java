@@ -1,15 +1,15 @@
-package org.softwire.training.bookish.models;
+package org.softwire.training.bookish.databaseModels;
 
-import javax.persistence.*;
+//import javax.persistence.*;
 
-@Entity
-@Table(name = "users")
+//@Entity
+//@Table(name = "users")
 public class User {
     private String username;
     private String password;
     private Boolean enabled;
 
-    @Id
+//    @Id
     public String getUsername() {
         return username;
     }
@@ -18,7 +18,7 @@ public class User {
         this.username = username;
     }
 
-    @Column(nullable = false)
+//    @Column(nullable = false)
     public String getPassword() {
         return password;
     }
@@ -27,7 +27,7 @@ public class User {
         this.password = password;
     }
 
-    @Column(nullable = false)
+//    @Column(nullable = false)
     public Boolean getEnabled() {
         return enabled;
     }

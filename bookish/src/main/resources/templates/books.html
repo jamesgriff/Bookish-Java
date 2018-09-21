@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org"
+      xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+      layout:decorate="~{layout}">
+    <head>
+        <title>Bookish - Home</title>
+    </head>
+    <body>
+        <div layout:fragment="content" class="container body-content">
+            <div class="jumbotron">
+                <h1>Bookish</h1>
+                <p class="lead">Welcome to the Bookish application</p>
+            </div>
+            <div>
+                <p th:each="book : ${booksPageModel.books}">
+                    Book details... Author: <span th:text="${book.author}"></span> Title: <span th:text="${book.title}"></span>
+                </p>
+            </div>
+        </div>
+    </body>
+</html>

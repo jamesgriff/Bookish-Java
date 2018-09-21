@@ -35,15 +35,15 @@
             <artifactId>spring-boot-starter-thymeleaf</artifactId>
         </dependency>
         <!-- Spring Boot Data JPA - provides integration with a DB and Hibernate -->
-        <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-data-jpa</artifactId>
-        </dependency>
+        <!--<dependency>-->
+            <!--<groupId>org.springframework.boot</groupId>-->
+            <!--<artifactId>spring-boot-starter-data-jpa</artifactId>-->
+        <!--</dependency>-->
         <!-- Spring Boot Security - provides authentication -->
-        <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-security</artifactId>
-        </dependency>
+        <!--<dependency>-->
+            <!--<groupId>org.springframework.boot</groupId>-->
+            <!--<artifactId>spring-boot-starter-security</artifactId>-->
+        <!--</dependency>-->
 
         <!-- MySQL Connector -->
         <dependency>
@@ -53,10 +53,24 @@
         </dependency>
 
         <!-- Guava -->
+        <!--<dependency>-->
+            <!--<groupId>com.google.guava</groupId>-->
+            <!--<artifactId>guava</artifactId>-->
+            <!--<version>23.6-jre</version>-->
+        <!--</dependency>-->
+
+        <!-- JDBI -->
+        <!--<dependency>-->
+            <!--<groupId>org.jdbi</groupId>-->
+            <!--<artifactId>jdbi</artifactId>-->
+            <!--&lt;!&ndash;<version>2.73</version>&ndash;&gt;-->
+        <!--</dependency>-->
         <dependency>
-            <groupId>com.google.guava</groupId>
-            <artifactId>guava</artifactId>
-            <version>23.6-jre</version>
+            <groupId>org.jdbi</groupId>
+            <artifactId>jdbi3-core</artifactId>
+            <version>3.4.0</version>
         </dependency>
+
     </dependencies>
+
 </project>
